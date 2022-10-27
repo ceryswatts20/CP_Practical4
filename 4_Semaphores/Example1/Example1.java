@@ -3,7 +3,7 @@
 
 ===========================================================*/
 import java.util.concurrent.Semaphore;
-import java.util.concurrent.locks.*;;
+import java.util.concurrent.locks.*;
 
 class Example1 {
     static final int MAX_NUMBER = 10;

@@ -29,9 +29,9 @@ class Example2 {
     public static void main (String[] args) {
 
         System.out.println("Start of program.");
-        Producer producer  = new Producer(1);
-        Producer producer2 = new Producer(2);
-        Consumer consumer  = new Consumer();
+        Producer2 producer  = new Producer2(1);
+        Producer2 producer2 = new Producer2(2);
+        Consumer2 consumer  = new Consumer2();
 
         producer.start();
         producer2.start();
@@ -41,11 +41,11 @@ class Example2 {
 /*===========================================================
     Producer process, puts numbers in the buffer
 ===========================================================*/
-class Producer extends Thread {
+class Producer2 extends Thread {
     private int number = 0;
     private int id;
 
-    public Producer(int id) {
+    public Producer2(int id) {
         this.id=id;
     }
 
@@ -80,7 +80,7 @@ class Producer extends Thread {
 /*===========================================================
     Consumer process, reads numbers in the buffer
 ===========================================================*/
-class Consumer extends Thread {
+class Consumer2 extends Thread {
 
     private int number=0;
 
